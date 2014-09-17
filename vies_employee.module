@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the VIES Employee feature.
+ */
+
+include_once 'vies_employee.features.inc';
