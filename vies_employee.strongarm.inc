@@ -63,7 +63,8 @@ function vies_employee_strongarm() {
   $strongarm->name = 'node_options_vies_employee';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'revision',
+    1 => 'promote',
+    2 => 'revision',
   );
   $export['node_options_vies_employee'] = $strongarm;
 
