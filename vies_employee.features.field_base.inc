@@ -33,14 +33,7 @@ function vies_employee_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_vies_employee_category',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
+    'foreign keys' => array(),
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
@@ -67,14 +60,7 @@ function vies_employee_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_vies_favorite_athlete',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
+    'foreign keys' => array(),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -96,14 +82,7 @@ function vies_employee_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_vies_favorite_quote',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
+    'foreign keys' => array(),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -123,14 +102,7 @@ function vies_employee_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_vies_funny_addons',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
+    'foreign keys' => array(),
     'indexes' => array(
       'format' => array(
         0 => 'format',
