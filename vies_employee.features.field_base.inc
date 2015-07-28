@@ -17,7 +17,6 @@ function vies_employee_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_vies_email',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'email',
@@ -33,7 +32,6 @@ function vies_employee_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_vies_employee_category',
-    'foreign keys' => array(),
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
@@ -60,7 +58,6 @@ function vies_employee_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_vies_favorite_athlete',
-    'foreign keys' => array(),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -82,7 +79,6 @@ function vies_employee_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_vies_favorite_quote',
-    'foreign keys' => array(),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -102,7 +98,6 @@ function vies_employee_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_vies_funny_addons',
-    'foreign keys' => array(),
     'indexes' => array(
       'format' => array(
         0 => 'format',
