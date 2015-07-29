@@ -195,8 +195,8 @@ function vies_employee_views_default_views() {
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'responsive_grid';
-  $handler->display->display_options['style_options']['wrapper_classes'] = 'container span12';
-  $handler->display->display_options['style_options']['column_classes'] = 'views-column span3';
+  $handler->display->display_options['style_options']['wrapper_classes'] = 'container';
+  $handler->display->display_options['style_options']['column_classes'] = 'views-column cold-md-4';
   $handler->display->display_options['style_options']['row_classes'] = 'views-row row-fluid';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
