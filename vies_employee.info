@@ -44,3 +44,4 @@ features[variable][] = node_preview_vies_employee
 features[variable][] = node_submitted_vies_employee
 features[views_view][] = manage_employees
 features[views_view][] = vies_employees
+files[] = vies_employee.migrate.inc
