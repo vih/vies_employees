@@ -34,6 +34,11 @@ class VIESEmployeeNode extends Migration {
     $this->addFieldMapping('body', 'body');
     $this->addFieldMapping('body:format')
       ->defaultValue('panopoly_wysiwyg_text');
+    $this->addFieldMapping('field_vies_favorite_quote', 'quote');
+    $this->addFieldMapping('field_vies_favorite_athlete', 'athlete');
+    $this->addFieldMapping('field_vies_funny_addons', 'addons');
+    $this->addFieldMapping('field_vies_email', 'email');
+    $this->addFieldMapping('field_vies_employee_category', 'category');
 
     // Featured image
     $this->addFieldMapping('field_featured_image', 'featured_image');
@@ -47,7 +52,12 @@ class VIESEmployeeNode extends Migration {
     $columns[0] = array('id', 'Id');
     $columns[1] = array('title', 'Title');
     $columns[2] = array('body', 'Body');
-    $columns[4] = array('featured_image', 'Featured Image');
+    $columns[3] = array('quote', 'Quote');
+    $columns[4] = array('athlete', 'Athlete');
+    $columns[5] = array('addons', 'Addons');
+    $columns[6] = array('email', 'Email');
+    $columns[7] = array('category', 'Category');
+    $columns[8] = array('featured_image', 'Featured Image');
     return $columns;
   }
 }

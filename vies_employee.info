@@ -9,6 +9,7 @@ dependencies[] = email
 dependencies[] = features
 dependencies[] = image
 dependencies[] = node
+dependencies[] = migrate
 dependencies[] = options
 dependencies[] = panopoly_core
 dependencies[] = panopoly_pages
