@@ -13,7 +13,7 @@ function vies_employee_views_default_views() {
   $view = new view();
   $view->name = 'manage_employees';
   $view->description = '';
-  $view->tag = 'default';
+  $view->tag = 'VIES';
   $view->base_table = 'node';
   $view->human_name = 'Manage Employees';
   $view->core = 7;
@@ -37,37 +37,37 @@ function vies_employee_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'table';
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Felt: Draggableviews: Indhold */
+  /* Field: Draggableviews: Content */
   $handler->display->display_options['fields']['draggableviews']['id'] = 'draggableviews';
   $handler->display->display_options['fields']['draggableviews']['table'] = 'node';
   $handler->display->display_options['fields']['draggableviews']['field'] = 'draggableviews';
   $handler->display->display_options['fields']['draggableviews']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['draggableviews']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['draggableviews']['draggableviews']['ajax'] = 0;
-  /* Felt: Draggableviews: Vægt */
+  /* Field: Draggableviews: Weight */
   $handler->display->display_options['fields']['weight']['id'] = 'weight';
   $handler->display->display_options['fields']['weight']['table'] = 'draggableviews_structure';
   $handler->display->display_options['fields']['weight']['field'] = 'weight';
   $handler->display->display_options['fields']['weight']['exclude'] = TRUE;
-  /* Sorteringskriterie: Indhold: Oprettelsesdato */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Filterkriterie: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filterkriterie: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -93,19 +93,20 @@ function vies_employee_views_default_views() {
     t('Sortér efter'),
     t('Stigende'),
     t('Faldende'),
-    t('Titel'),
-    t('Indhold'),
-    t('Vægt'),
+    t('Title'),
+    t('Content'),
+    t('Weight'),
     t('.'),
     t(','),
     t('Page'),
+    t('more'),
   );
   $export['manage_employees'] = $view;
 
   $view = new view();
   $view->name = 'vies_employees';
   $view->description = '';
-  $view->tag = 'default';
+  $view->tag = 'VIES';
   $view->base_table = 'node';
   $view->human_name = 'VIES Employees';
   $view->core = 7;
@@ -127,13 +128,12 @@ function vies_employee_views_default_views() {
   $handler->display->display_options['exposed_form']['options']['sort_desc_label'] = 'Faldende';
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'responsive_grid';
-  $handler->display->display_options['style_options']['wrapper_classes'] = 'container span12';
-  $handler->display->display_options['style_options']['column_classes'] = 'views-column span3';
-  $handler->display->display_options['style_options']['row_classes'] = 'views-row row-fluid';
+  $handler->display->display_options['style_plugin'] = 'radix_views_grid_plugin_style';
+  $handler->display->display_options['style_options']['views_group_col_class'] = 'c';
+  $handler->display->display_options['style_options']['views_row_col_class'] = 'col-lg-4 col-xs-6 col-sm-12';
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['links'] = FALSE;
-  /* Felt: Felt: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
@@ -144,7 +144,7 @@ function vies_employee_views_default_views() {
     'image_style' => 'panopoly_image_square',
     'image_link' => 'content',
   );
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -159,21 +159,21 @@ function vies_employee_views_default_views() {
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
   $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'manage_employees:page';
   $handler->display->display_options['sorts']['weight']['draggableviews_setting_new_items_bottom_list'] = 1;
-  /* Filterkriterie: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filterkriterie: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'vies_employee' => 'vies_employee',
   );
-  /* Filterkriterie: Indhold: Category (field_vies_employee_category) */
+  /* Filter criterion: Content: Category (field_vies_employee_category) */
   $handler->display->display_options['filters']['field_vies_employee_category_tid']['id'] = 'field_vies_employee_category_tid';
   $handler->display->display_options['filters']['field_vies_employee_category_tid']['table'] = 'field_data_field_vies_employee_category';
   $handler->display->display_options['filters']['field_vies_employee_category_tid']['field'] = 'field_vies_employee_category_tid';
@@ -193,15 +193,6 @@ function vies_employee_views_default_views() {
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'responsive_grid';
-  $handler->display->display_options['style_options']['wrapper_classes'] = 'container';
-  $handler->display->display_options['style_options']['column_classes'] = 'views-column cold-md-4';
-  $handler->display->display_options['style_options']['row_classes'] = 'views-row row-fluid';
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['pane_category']['name'] = 'VIES';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['allow']['use_pager'] = 0;
@@ -223,6 +214,7 @@ function vies_employee_views_default_views() {
     t('Faldende'),
     t('Kategori'),
     t('Content pane'),
+    t('more'),
     t('VIES'),
   );
   $export['vies_employees'] = $view;
