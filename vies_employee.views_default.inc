@@ -130,7 +130,7 @@ function vies_employee_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'radix_views_grid_plugin_style';
   $handler->display->display_options['style_options']['views_group_col_class'] = 'c';
-  $handler->display->display_options['style_options']['views_row_col_class'] = 'col-lg-4 col-xs-6 col-sm-12';
+  $handler->display->display_options['style_options']['views_row_col_class'] = 'col-lg-3 col-xs-12 col-sm-6';
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['links'] = FALSE;
   /* Field: Field: Image */

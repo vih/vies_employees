@@ -84,7 +84,7 @@ function vies_employee_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => 'content',
-          'image_style' => 'panopoly_image_quarter',
+          'image_style' => 'panopoly_image_square',
         ),
         'type' => 'image',
         'weight' => 0,
