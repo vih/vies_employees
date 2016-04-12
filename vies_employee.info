@@ -37,6 +37,7 @@ features[field_instance][] = node-vies_employee-field_vies_favorite_quote
 features[field_instance][] = node-vies_employee-field_vies_funny_addons
 features[node][] = vies_employee
 features[taxonomy][] = vies_employee_group
+features[user_permission][] = access draggableviews
 features[variable][] = field_bundle_settings_node__vies_employee
 features[variable][] = language_content_type_vies_employee
 features[variable][] = menu_options_vies_employee
